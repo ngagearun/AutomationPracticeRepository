@@ -43,6 +43,7 @@ import org.openqa.selenium.support.ui.Select;
 			Select select3 =new Select(Dropdown2);
 			select1.selectByIndex(2);
 			
+			
 			driver.close();
 	}
 			
