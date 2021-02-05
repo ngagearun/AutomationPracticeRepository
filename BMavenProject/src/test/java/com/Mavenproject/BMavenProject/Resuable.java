@@ -4,7 +4,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.edge.EdgeDriver;
 
 public class Resuable {
-
 static EdgeDriver driver;
 	
 	
@@ -79,6 +78,3 @@ static EdgeDriver driver;
 
 
 }
-
-
-

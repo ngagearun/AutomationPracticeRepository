@@ -1,15 +1,10 @@
 package com.Mavenproject.BMavenProject;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 
-
-
-	public class launch extends Resuable {
+public class launch extends Resuable {
 		
 
 		public static void main(String[] args) throws InterruptedException {
@@ -52,13 +47,4 @@ import org.openqa.selenium.support.ui.Select;
 		
 
 	
-	
-
-
-
-
 }
-
-
-
-
