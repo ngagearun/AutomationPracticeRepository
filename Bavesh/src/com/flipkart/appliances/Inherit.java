@@ -8,7 +8,7 @@ class Employee{
 	
 }
 
-class admin extends Employee{
+class admin1 extends Employee{
 	String name="Bavesh";
 	
 	void calculatename(String name) {
@@ -49,7 +49,7 @@ public class Inherit {
 	public static void main(String[] args) {
 		
 		Program Bavesh = new Program();
-		admin ravi=new admin();
+		admin1 ravi=new admin1();
 		Bavesh.calculatesal(2000);
 		ravi.calculatename("shyam");
 		administrator shruti=new administrator();
