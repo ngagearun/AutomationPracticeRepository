@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+/*<<<<<<< HEAD
 package com.flipkart.appliances;
 
 public class JogashreeFile {
@@ -21,3 +21,4 @@ public class JogashreeFile {
 
 }
 >>>>>>> branch 'master' of https://github.com/ngagearun/AutomationPracticeRepository.git
+*/
