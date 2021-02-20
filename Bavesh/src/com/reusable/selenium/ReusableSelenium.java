@@ -3,15 +3,16 @@ package com.reusable.selenium;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class ReusableSelenium {
-	public static ChromeDriver driver;
+	public static FirefoxDriver driver;
 	public static void launchbrowser() {
-		WebDriverManager.chromedriver().setup();
-		 driver=new ChromeDriver();
+		WebDriverManager.firefoxdriver().setup();
+		 driver=new FirefoxDriver();
 		
 	}
 	public static void openapp(String url) {
@@ -47,17 +48,17 @@ public class ReusableSelenium {
 		WebElement element=driver.findElement(locatorname);
 		action.moveToElement(element).perform();
 	}
-	public static String getTitle(String title) {
+	public static String getTitle() {
 		String titlename=driver.getTitle();
 		return titlename;
 	}
 	
 	public static void draggable(By locatorname) {
-		WebElement draggable=driver.findElement(locatorname);
+		//WebElement draggable=driver.findElement(locatorname,int x,int y);
 		Actions action=new Actions(driver);
-		//action.dragAndDropBy(draggable, xOffset, yOffset).perform();
+		//action.dragAndDropBy(draggable, x, y).perform();
 	}
 		
 	}
 
-}
+

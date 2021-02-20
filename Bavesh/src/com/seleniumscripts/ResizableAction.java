@@ -6,20 +6,21 @@ import org.openqa.selenium.interactions.Actions;
 
 import com.reusable.selenium.ReusableSelenium;
 
-public class DraggableAction extends ReusableSelenium{
+public class ResizableAction extends ReusableSelenium{
 
 	public static void main(String[] args) throws InterruptedException {
 		launchbrowser();
-		openapp("https://jqueryui.com/draggable/");
-		Thread.sleep(9000);
-		driver.switchTo().frame(0);
-		WebElement draggable = driver.findElement(By.id("draggable"));
-		Thread.sleep(6000);
+		openapp("https://jqueryui.com/resizable/");
+		Thread.sleep(8000);
 		Actions action=new Actions(driver);
-		action.dragAndDropBy(draggable, 168, 97).perform();
-		Thread.sleep(4000);
+		WebElement Resizable=driver.findElement(By.xpath("//*[@id=\'resizable\']"));
+		Thread.sleep(6000);
+		action.clickAndHold();
+		action.dragAndDropBy(Resizable, 163, 234).release().build().perform();
+		Thread.sleep(8000);
 		driver.close();
 		
+
 	}
 
 }
